@@ -10,25 +10,21 @@ function mdp($mdp, $action = 'illisible')
     
     
     
-  
-
-    $hash = hash('sha256', $clef);
-    
-    $iv = substr(hash('sha256', '8hgn5HJ5g27') , 0, 16);
+ 
 
     if ($action == 'illisible') { 
     
-        $reponse = openssl_encrypt($mdp, 'AES-256-CBC', $hash, 0, $iv);
+        $reponse = openssl_encrypt($mdp, 'AES-256-CBC', 'hash('sha256', $clef)', 0, 'substr(hash('sha256', '8hgn5HJ5g27') , 0, 16)');
 
         $reponse = base64_encode($reponse);
 
     } else if ($action == 'lisible') {
     
-        $reponse = openssl_decrypt(base64_decode($mdp) , 'AES-256-CBC', $hash, 0, $iv);
+        $out = openssl_decrypt(base64_decode($mdp) , 'AES-256-CBC', $hash, 0, $iv);
 
     }
 
-    return $reponse;
+    return $out;
 }
 
 ?>
