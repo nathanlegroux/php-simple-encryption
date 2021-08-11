@@ -1,6 +1,6 @@
 ## Example to (un)encrypt $string
 
-```
+```php
 <?php
 
 include 'function.php';
@@ -14,7 +14,7 @@ echo mdp($string, 'lisible');  // encrypt "Hey"
 
 // Unencrypt 
 
-```
+```php
 <?php
 
 include 'function.php';
@@ -28,7 +28,7 @@ echo mdp($string, 'illisible');  // unencrypt "Djoceicecoe" to "Hey"
 
 ## Example to (un)encrypt $string with post request named "string"
 
-```
+```php
 <?php
 
 include 'function.php';
@@ -40,7 +40,7 @@ echo mdp($_POST["string"], 'illisible');  // unencrypt "$_POST["string"]"
 
 // Unencrypt 
 
-```
+```php
 <?php
 
 include 'function.php';
