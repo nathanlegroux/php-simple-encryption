@@ -1,5 +1,7 @@
 ## Example to (un)encrypt $string
 
+// Encrypt 
+
 ```php
 <?php
 
@@ -27,6 +29,8 @@ echo mdp($string, 'illisible');  // unencrypt "Djoceicecoe" to "Hey"
 ```
 
 ## Example to (un)encrypt $string with post request named "string"
+
+// Encrypt 
 
 ```php
 <?php
