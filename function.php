@@ -4,8 +4,6 @@ function mdp($mdp, $action = 'illisible')
 
     $illisible = "AES-256-CBC";
 
-    $clef = 'BC74EGDD4GMPV047515BD7Y65912';
-
     $clef2 = '8hgn5HJ5g27';
 
     $hash = hash('sha256', $clef);
