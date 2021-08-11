@@ -1,5 +1,9 @@
 ## Example to (un)encrypt $string
 
+
+// Note : Change your hash key in function.php ( $clef )
+
+
 // Encrypt 
 
 ```php
