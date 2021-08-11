@@ -19,6 +19,7 @@ echo mdp($string, 'lisible');  // encrypt "Hey"
 ```php
 <?php
 
+
 include 'function.php';
 
 $string = 'Djoceicecoe';
@@ -34,6 +35,7 @@ echo mdp($string, 'illisible');  // unencrypt "Djoceicecoe" to "Hey"
 
 ```php
 <?php
+
 
 include 'function.php';
 
