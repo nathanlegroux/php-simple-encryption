@@ -1,9 +1,11 @@
 ## Example to (un)encrypt $string
 
 $string = 'Hey';
+
 echo mdp($string, 'lisible');  // encrypt "Hey"
 
 $string = 'Djoceicecoe';
+
 echo mdp($string, 'illisible');  // unencrypt "Djoceicecoe" to "Hey"
 
 
