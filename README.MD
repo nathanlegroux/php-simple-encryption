@@ -13,7 +13,7 @@ include 'function.php';
 
 $string = 'Hey';
 
-echo mdp($string, 'lisible');  // encrypt "Hey"
+echo mdp($string, 'illisible');  // encrypt "Hey"
 
 ?>
 ```
@@ -28,7 +28,7 @@ include 'function.php';
 
 $string = 'Djoceicecoe';
 
-echo mdp($string, 'illisible');  // unencrypt "Djoceicecoe" to "Hey" ( it's an example 😆 )
+echo mdp($string, 'lisible');  // unencrypt "Djoceicecoe" to "Hey" ( it's an example 😆 )
 
 ?>
 ```
@@ -43,7 +43,7 @@ echo mdp($string, 'illisible');  // unencrypt "Djoceicecoe" to "Hey" ( it's an e
 
 include 'function.php';
 
-echo mdp($_POST["string"], 'illisible');  // unencrypt "$_POST["string"]"
+echo mdp($_POST["string"], 'lisible');  // unencrypt "$_POST["string"]"
 
 ?>
 ```
@@ -55,7 +55,7 @@ echo mdp($_POST["string"], 'illisible');  // unencrypt "$_POST["string"]"
 
 include 'function.php';
 
-echo mdp($_POST["string"], 'lisible');  // encrypt "$_POST["string"]"
+echo mdp($_POST["string"], 'illisible');  // encrypt "$_POST["string"]"
 
 ?>
 ```
