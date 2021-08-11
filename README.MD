@@ -28,7 +28,7 @@ include 'function.php';
 
 $string = 'Djoceicecoe';
 
-echo mdp($string, 'illisible');  // unencrypt "Djoceicecoe" to "Hey"
+echo mdp($string, 'illisible');  // unencrypt "Djoceicecoe" to "Hey" ( it's an example 😆 )
 
 ?>
 ```
