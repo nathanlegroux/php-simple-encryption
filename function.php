@@ -1,19 +1,34 @@
 <?php
 
-
- $clef = 'BC74EGDD4GMPV047515BD7Y65912'; // you can define your unique encryption key, change it !
-
-
-
-
-
-
-
-
-
 function mdp($mdp, $action = 'illisible')
 {
   
+
+
+
+
+
+
+
+
+
+
+
+   $clef = 'BC74EGDD4GMPV047515BD7Y65912'; // you can define your unique encryption key, change it !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     $k2 = substr(hash('sha256', '8hgn5HJ5g27') , 0, 16);
     $hash = hash('sha256', $clef);
