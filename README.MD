@@ -43,7 +43,7 @@ echo mdp($mot, 'lisible');  // unencrypt "Djoceicecoe" to "Hey" ( it's an exampl
 
 include 'function.php';
 
-echo mdp($_POST["mot"], 'lisible');  // unencrypt "$_POST["mot"]"
+echo mdp($_POST["mot"], 'illisible');  // unencrypt "$_POST["mot"]"
 
 ?>
 ```
@@ -55,7 +55,7 @@ echo mdp($_POST["mot"], 'lisible');  // unencrypt "$_POST["mot"]"
 
 include 'function.php';
 
-echo mdp($_POST["mot"], 'illisible');  // encrypt "$_POST["mot"]"
+echo mdp($_POST["mot"], 'lisible');  // encrypt "$_POST["mot"]"
 
 ?>
 ```
