@@ -1,7 +1,7 @@
 - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `Note : Change your hash key in function.php ( $clef )`
 
 
-## Example to (un)encrypt $string
+## Example to (un)encrypt $mot
 
 
 // Encrypt 
@@ -11,9 +11,9 @@
 
 include 'function.php';
 
-$string = 'Hey';
+$mot = 'Hey';
 
-echo mdp($string, 'illisible');  // encrypt "Hey"
+echo mdp($mot, 'illisible');  // encrypt "Hey"
 
 ?>
 ```
@@ -26,14 +26,14 @@ echo mdp($string, 'illisible');  // encrypt "Hey"
 
 include 'function.php';
 
-$string = 'Djoceicecoe';
+$mot = 'Djoceicecoe';
 
-echo mdp($string, 'lisible');  // unencrypt "Djoceicecoe" to "Hey" ( it's an example 😆 )
+echo mdp($mot, 'lisible');  // unencrypt "Djoceicecoe" to "Hey" ( it's an example 😆 )
 
 ?>
 ```
 
-## Example to (un)encrypt $string with post request named "string"
+## Example to (un)encrypt a post request named "mot"
 
 // Encrypt 
 
@@ -43,7 +43,7 @@ echo mdp($string, 'lisible');  // unencrypt "Djoceicecoe" to "Hey" ( it's an exa
 
 include 'function.php';
 
-echo mdp($_POST["string"], 'lisible');  // unencrypt "$_POST["string"]"
+echo mdp($_POST["mot"], 'lisible');  // unencrypt "$_POST["mot"]"
 
 ?>
 ```
@@ -55,7 +55,7 @@ echo mdp($_POST["string"], 'lisible');  // unencrypt "$_POST["string"]"
 
 include 'function.php';
 
-echo mdp($_POST["string"], 'illisible');  // encrypt "$_POST["string"]"
+echo mdp($_POST["mot"], 'illisible');  // encrypt "$_POST["mot"]"
 
 ?>
 ```
