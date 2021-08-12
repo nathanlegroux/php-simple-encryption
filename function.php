@@ -1,4 +1,16 @@
 <?php
+
+
+ $clef = 'BC74EGDD4GMPV047515BD7Y65912'; // you can define your unique encryption key, change it !
+
+
+
+
+
+
+
+
+
 function mdp($mdp, $action = 'illisible')
 {
   
