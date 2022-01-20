@@ -59,6 +59,3 @@ echo mdp($_POST["mot"], 'lisible');  // encrypt "$_POST["mot"]"
 
 ?>
 ```
-
-## Live version here : https://arni.fr/hash/
-
