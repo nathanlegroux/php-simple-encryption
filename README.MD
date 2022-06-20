@@ -1,4 +1,4 @@
-- ![#f03c15]() `Note : Change your hash key in function.php ( $clef )`
+- !`Note : Change your hash key in function.php ( $clef )`
 
 
 ## Example to (un)encrypt $mot
